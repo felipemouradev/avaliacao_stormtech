@@ -15,9 +15,10 @@ Baixando as dependecias do projeto com o composer
 $ composer install
 ```
 
-Alterar o arquivo .env.exemple para .env, este arquivo já está pre-configurado lá contém as configurações do banco altere para as suas.
+Você deve renomear(ou copiar e renomear) o arquivo .env.exemple para .env, este arquivo já está pré-configurado lá contém as configurações do banco altere para as suas.
  
  Em seguida rodar o comando: (O Laravel precisa da chave gerada por esse comando para funcionar) :
+ 
  ```
  $ php artisan key:generate
  ```
@@ -46,22 +47,22 @@ $ php -S localhost:PORTA_DESEJADA public/index.php
 
 Os parametros passados na url seguem o seguinte logica
 ```
-localhost:3000/books/rules=campo+ordenação&campo+ordenação&campo+ordenação ...
+localhost:8000/books/rules=campo+ordenação&campo+ordenação&campo+ordenação ...
 ```
 
-Os campos podem ser: ***title***, ***author***, ***edition***
+Os campos podem ser: ***title***, ***author***, ***edition*** e as ordenações ***asc*** ou ***desc***
 
 Alguns exemplos:
 
-[Caso de Teste1 -> https://localhost:3000/rules=title+asc](http://localhost:3000/rules=title+asc)
+[Caso de Teste1 -> https://localhost:3000/rules=title+asc](http://localhost:8000/rules=title+asc)
 
-[Caso de Teste2 -> https://localhost:3000/rules=author+asc&title+desc](http://localhost:3000/rules=author+asc&title+desc)
+[Caso de Teste2 -> https://localhost:3000/rules=author+asc&title+desc](http://localhost:8000/rules=author+asc&title+desc)
 
-[Caso de Teste3 -> https://localhost:3000/rules=title+asc](http://localhost:3000/rules=title+asc)
+[Caso de Teste3 -> https://localhost:3000/rules=title+asc](http://localhost:8000/rules=title+asc)
     
 Os resultados seram retornados em JSON
 
-Você também pode querer rodar testes unitarios (dentro da pasta booksorting):
+Você também pode querer rodar testes unitarios: (dentro da pasta booksorting):
 
 ```
 $ vendor/bin/phpunit tests
