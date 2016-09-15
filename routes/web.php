@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/booksort','BookController@booksort');
+Route::get('books/{params?}','BookController@listBooks');
