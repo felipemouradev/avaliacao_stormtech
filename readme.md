@@ -53,16 +53,16 @@ Os campos podem ser: ***title***, ***author***, ***edition***
 
 Alguns exemplos:
 
-[Caso de Teste1 -> https://localhost:3000/rules=title+asc](https://localhost:3000/rules=title+asc)
+[Caso de Teste1 -> https://localhost:3000/rules=title+asc](http://localhost:3000/rules=title+asc)
 
-[Caso de Teste2 -> https://localhost:3000/rules=author+asc&title+desc](https://localhost:3000/rules=author+asc&title+desc)
+[Caso de Teste2 -> https://localhost:3000/rules=author+asc&title+desc](http://localhost:3000/rules=author+asc&title+desc)
 
-[Caso de Teste3 -> https://localhost:3000/rules=title+asc](https://localhost:3000/rules=title+asc)
+[Caso de Teste3 -> https://localhost:3000/rules=title+asc](http://localhost:3000/rules=title+asc)
     
 Os resultados seram retornados em JSON
 
 Você também pode querer rodar testes unitarios (dentro da pasta booksorting):
 
 ```
-vendor/bin/phpunit tests
+$ vendor/bin/phpunit tests
 ```
