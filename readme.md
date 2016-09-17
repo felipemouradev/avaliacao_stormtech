@@ -1,5 +1,6 @@
 ***Instruções***
 
+
 Siga as instruções de instalação da vm:
 
 [Ver Instruções de Instalação da VM (Criação do ambiente)](https://github.com/felipemouradev/machine_stormtech_ava/blob/master/readme.md)
@@ -26,12 +27,17 @@ $ cd /var/www/booksorting
 para ir navegar até o diretorio da aplicação.
 
 
-Baixando as dependecias do projeto com o composer
+Baixando as dependecias do projeto com o composer, rode o seguinte comando: 
 ```
 $ composer install && composer update
 ```
 
-Você deve renomear(ou copiar e renomear) o arquivo .env.exemple para .env, este arquivo já está pré-configurado lá contém as configurações do banco altere para as suas.
+Você deve renomear(ou copiar e renomear) o arquivo .env.exemple para .env, este arquivo já está pré-configurado lá, basta renomear, segue o comando:
+
+```
+$ cp .env.example .env
+
+```
  
  Em seguida rodar o comando: (O Laravel precisa da chave gerada por esse comando para funcionar) :
  
@@ -47,7 +53,7 @@ Preparando o banco e os dados de mock
 $ php artisan migrate 
 $ php artisan db:seed
 ```
-Está no ar [www.books.dev](www.books.dev)
+Está no ar [www.books.dev/books/](www.books.dev/books/)
 
 ***Guia de Uso***
 
