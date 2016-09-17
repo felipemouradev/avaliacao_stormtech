@@ -62,7 +62,7 @@ Alguns exemplos:
 
 [Caso de Teste2 -> http://www.books.dev/rules=author+asc&title+desc](http://www.books.dev/rules=author+asc&title+desc)
 
-[Caso de Teste3 -> http://www.books.dev/rules=title+asc](http://www.books.dev/rules=title+asc)
+[Caso de Teste3 -> http://www.books.dev/rules=edition+desc&author+desc&title+asc](http://www.books.dev/rules=edition+desc&author+desc&title+asc)
     
 Os resultados seram retornados em JSON
 
