@@ -72,7 +72,7 @@ Alguns exemplos:
 
 [Caso de Teste3 -> http://www.books.dev/rules=edition+desc&author+desc&title+asc](http://www.books.dev/rules=edition+desc&author+desc&title+asc)
     
-Os resultados seram retornados em JSON
+Os resultados seram retornados no formato json.
 
 Você também pode querer rodar testes unitarios: (dentro da pasta booksorting):
 
