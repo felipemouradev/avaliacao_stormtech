@@ -1,18 +1,32 @@
 ***Instruções***
 
+Siga as instruções de instalação da vm:
 
-Em criar um novo banco de dados com o nome booksorting 
-```SQL 
-CREATE SCHEMA `booksorting`;
+[Ver Instruções de Instalação da VM](https://github.com/felipemouradev/machine_stormtech_ava/blob/master/readme.md)
+
+Dentro da pasta machine_stormtech_ava, clone a avaliacao,rode o comando:
 ```
-Logo em seguida clonar o projeto, rodar o comando git clone na linha de comnando:
+$ rm -rf booksorting/ && git clone https://github.com/felipemouradev/avaliacao_stormtech booksorting
+
 ```
-$ git clone https://github.com/felipemouradev/avaliacao_stormtech
-$ cd avaliacao_stormtech
+
+Com a vm devidamente configurada, use o comando (obs: na pasta machine_stormtech_ava)
 ```
+$ vagrant ssh
+```
+para logar.
+
+
+Quando logado, rode o comando: 
+```
+$ cd /var/www/booksorting
+```
+para ir navegar até o diretorio da aplicação.
+
+
 Baixando as dependecias do projeto com o composer
 ```
-$ composer install
+$ composer install && composer update
 ```
 
 Você deve renomear(ou copiar e renomear) o arquivo .env.exemple para .env, este arquivo já está pré-configurado lá contém as configurações do banco altere para as suas.
@@ -31,34 +45,24 @@ Preparando o banco e os dados de mock
 $ php artisan migrate 
 $ php artisan db:seed
 ```
-
-Para subir um servidor de testes com o Laravel bastar rodar o comando: (http://localhost:8000):
-
-```
-$ php artisan serve
-```
-
-Obs. Caso deseje rodar o servidor em outra porta basta usar (dentro da pasta booksorting) :
-``` 
-$ php -S localhost:PORTA_DESEJADA public/index.php
-```
+Está no ar [www.books.dev](www.books.dev)
 
 ***Guia de Uso***
 
 Os parametros passados na url seguem o seguinte logica
 ```
-localhost:8000/books/rules=campo+ordenação&campo+ordenação&campo+ordenação ...
+www.books.dev/books/rules=campo+ordenação&campo+ordenação&campo+ordenação ...
 ```
 
 Os campos podem ser: ***title***, ***author***, ***edition*** e as ordenações ***asc*** ou ***desc***
 
 Alguns exemplos:
 
-[Caso de Teste1 -> https://localhost:3000/rules=title+asc](http://localhost:8000/rules=title+asc)
+[Caso de Teste1 -> http://www.books.dev/rules=title+asc](http://www.books.dev/rules=title+asc)
 
-[Caso de Teste2 -> https://localhost:3000/rules=author+asc&title+desc](http://localhost:8000/rules=author+asc&title+desc)
+[Caso de Teste2 -> http://www.books.dev/rules=author+asc&title+desc](http://www.books.dev/rules=author+asc&title+desc)
 
-[Caso de Teste3 -> https://localhost:3000/rules=title+asc](http://localhost:8000/rules=title+asc)
+[Caso de Teste3 -> http://www.books.dev/rules=title+asc](http://www.books.dev/rules=title+asc)
     
 Os resultados seram retornados em JSON
 
