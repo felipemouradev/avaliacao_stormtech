@@ -2,9 +2,11 @@
 
 Siga as instruções de instalação da vm:
 
-[Ver Instruções de Instalação da VM](https://github.com/felipemouradev/machine_stormtech_ava/blob/master/readme.md)
+[Ver Instruções de Instalação da VM (Criação do ambiente)](https://github.com/felipemouradev/machine_stormtech_ava/blob/master/readme.md)
 
-Dentro da pasta machine_stormtech_ava, clone a avaliacao,rode o comando:
+Apos ter criado o ambiente continue, os passos seguintes.
+
+Dentro da pasta machine_stormtech_ava, clone a avaliacao rodando o comando:
 ```
 $ rm -rf booksorting/ && git clone https://github.com/felipemouradev/avaliacao_stormtech booksorting
 
