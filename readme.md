@@ -5,9 +5,9 @@ Siga as instruções de instalação da vm:
 
 [Ver Instruções de Instalação da VM (Criação do ambiente)](https://github.com/felipemouradev/machine_stormtech_ava/blob/master/readme.md)
 
-Apos ter criado o ambiente continue, os passos seguintes.
+Apos ter criado o ambiente continue com os passos seguintes.
 
-Dentro da pasta machine_stormtech_ava, clone a avaliacao rodando o comando:
+Dentro da pasta machine_stormtech_ava, clone a avaliacao executando o comando abaixo:
 ```
 $ rm -rf booksorting/ && git clone https://github.com/felipemouradev/avaliacao_stormtech booksorting
 
@@ -20,19 +20,19 @@ $ vagrant ssh
 para logar.
 
 
-Quando logado, rode o comando: 
+Quando logado, execute o comando: 
 ```
 $ cd /var/www/booksorting
 ```
 para ir navegar até o diretorio da aplicação.
 
 
-Baixando as dependecias do projeto com o composer, rode o seguinte comando: 
+Baixando as dependecias do projeto com o composer, execute o seguinte comando: 
 ```
 $ composer install && composer update
 ```
 
-Você deve renomear(ou copiar e renomear) o arquivo .env.exemple para .env, este arquivo já está pré-configurado lá, basta renomear, segue o comando:
+Configurando o .env, execute o comando a seguir:
 
 ```
 $ cp .env.example .env
@@ -78,7 +78,7 @@ Alguns exemplos:
     
 Os resultados seram retornados no formato json.
 
-Você também pode querer rodar testes unitarios: (dentro da pasta booksorting):
+Você também pode querer executar os testes unitarios: (dentro da pasta booksorting):
 
 ```
 $ vendor/bin/phpunit tests
